@@ -1,9 +1,7 @@
 import "./Nav.css";
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-// import logo from "../../../assets/logo/horizontal_logo_transparent.png";
+import { Link } from "react-router-dom";
 import logo from "../../../assets/logo/logo_icon.png";
-// import "../../../assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js";
 
 const Nav = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -11,13 +9,14 @@ const Nav = () => {
   const handleNavLinkClick = (link) => {
     setActiveLink(link);
   };
+
   return (
-    <nav className="navbar navbar-expand-lg py sticky-top bg-light">
+    <nav className="navbar navbar-expand-lg py sticky-top">
       <div className="container-fluid mx-xl-5">
         <div>
           <a href="./" className="navbar-brand d-flex align-items-center">
-            <img src={logo} width={50} height={50} alt="okumbe logo" />
-            <span className="ms-2 company">AISIRI GROUP</span>
+            <img src={logo} width={50} height={50} alt="Aisiri Group logo" />
+            <span className="ms-2 company-name">AISIRI GROUP</span>
           </a>
         </div>
 
@@ -34,15 +33,13 @@ const Nav = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navMenu">
-          <ul className="navbar-nav ms-auto nav-pills nav-fill ">
+          <ul className="navbar-nav ms-auto nav-pills nav-fill">
             <li className="nav-item mx-3">
               <Link
                 to="/"
-                className={
-                  activeLink === "/"
-                    ? "nav-link active text-primary bg-light"
-                    : "nav-link"
-                }
+                className={`nav-link company ${
+                  activeLink === "/" ? "custom" : ""
+                }`}
                 onClick={() => handleNavLinkClick("/")}
               >
                 Home
@@ -51,11 +48,9 @@ const Nav = () => {
             <li className="nav-item mx-4">
               <Link
                 to="/about"
-                className={
-                  activeLink === "/about"
-                    ? "nav-link active text-primary bg-light"
-                    : "nav-link"
-                }
+                className={`nav-link company ${
+                  activeLink === "/about" ? "custom" : ""
+                }`}
                 onClick={() => handleNavLinkClick("/about")}
               >
                 Shop Wines
@@ -64,11 +59,9 @@ const Nav = () => {
             <li className="nav-item mx-4">
               <Link
                 to="/service"
-                className={
-                  activeLink === "/services"
-                    ? "nav-link active text-primary bg-light"
-                    : "nav-link"
-                }
+                className={`nav-link company ${
+                  activeLink === "/services" ? "custom" : ""
+                }`}
                 onClick={() => handleNavLinkClick("/services")}
               >
                 About Us
@@ -77,11 +70,9 @@ const Nav = () => {
             <li className="nav-item mx-4">
               <Link
                 to="/projects"
-                className={
-                  activeLink === "/projects"
-                    ? "nav-link active text-primary bg-light"
-                    : "nav-link"
-                }
+                className={`nav-link company ${
+                  activeLink === "/projects" ? "custom" : ""
+                }`}
                 onClick={() => handleNavLinkClick("/projects")}
               >
                 Contact
@@ -90,11 +81,9 @@ const Nav = () => {
             <li className="nav-item mx-4">
               <Link
                 to="/teams"
-                className={
-                  activeLink === "/teams"
-                    ? "nav-link active text-primary bg-light"
-                    : "nav-link"
-                }
+                className={`nav-link company ${
+                  activeLink === "/teams" ? "custom" : ""
+                }`}
                 onClick={() => handleNavLinkClick("/teams")}
               >
                 Profile
@@ -103,11 +92,9 @@ const Nav = () => {
             <li className="nav-item mx-4">
               <Link
                 to="/contact"
-                className={
-                  activeLink === "/contact"
-                    ? "nav-link active text-primary bg-light"
-                    : "nav-link"
-                }
+                className={`nav-link company ${
+                  activeLink === "/contact" ? "custom" : ""
+                }`}
                 onClick={() => handleNavLinkClick("/contact")}
               >
                 Cart

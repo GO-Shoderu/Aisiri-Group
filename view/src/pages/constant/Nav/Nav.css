@@ -1,7 +1,43 @@
+/* .hidden-link {
+  display: none;
+}
+
+.company {
+  color: #fff !important;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  color: #fff !important;
+} */
+
+/* nav.css */
+
 .hidden-link {
   display: none;
 }
 
 .company {
-  color: #e4c568;
+  color: #fff !important; /* Ensure the color is applied by using !important */
+}
+
+.company-name {
+  color: #ffdd57;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  color: #fff;
+}
+
+.navbar .nav-link {
+  color: #fff !important; /* Ensure the color is applied by using !important */
+}
+
+.navbar .nav-link.custom {
+  color: #ffdd57 !important; /* Highlight the active link differently, if desired */
+  background-color: transparent;
+  /* color: inherit; */
 }
