@@ -2,12 +2,16 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Nav from "./pages/constant/Nav/Nav";
+import Hero from "./pages/constant/Hero/Hero";
+
+// import "App.css";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="bg-light pb-3">
+      <div className="bg-dark pb-3">
         <Nav />
+        <Hero />
         <Routes>
           {/* <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<AboutUS />} />

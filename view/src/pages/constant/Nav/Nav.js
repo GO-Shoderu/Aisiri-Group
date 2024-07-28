@@ -11,7 +11,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg py sticky-top">
+    <nav className="navbar navbar-expand-lg sticky-top py">
       <div className="container-fluid mx-xl-5">
         <div>
           <a href="./" className="navbar-brand d-flex align-items-center">
