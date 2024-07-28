@@ -16,3 +16,7 @@
 .call-to-action:hover {
   background-color: #c2181d; /* Darken the color on hover */
 }
+
+.company-color {
+  color: #ffdd57 !important;
+}

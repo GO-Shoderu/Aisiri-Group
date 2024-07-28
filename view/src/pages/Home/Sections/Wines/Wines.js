@@ -37,7 +37,7 @@ const Wines = () => {
               </p>
               <br />
               <div
-                className="text-center text-xl-start call-to-action"
+                className="text-center text-xl-start call-to-action company-color"
                 data-aos="fade-up"
                 data-aos-easing="linear"
                 data-aos-duration="800"

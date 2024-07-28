@@ -1,0 +1,30 @@
+.wines {
+  color: #db1c24 !important;
+}
+
+.call-to-action {
+  background-color: #db1c24; /* Set the background color */
+  color: #fff; /* Set the text color */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Adjust padding */
+  border-radius: 5px; /* Round corners */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.call-to-action:hover {
+  background-color: #c2181d; /* Darken the color on hover */
+}
+
+.company-color {
+  color: #ffdd57 !important;
+}
+
+.about {
+  background-color: #dcdcdc !important;
+}
+
+.rm-bg {
+  background-color: transparent;
+}
