@@ -1,10 +1,10 @@
 /* Hero.css */
 
 .hero {
-  background-image: url("../../../assets/images/kevin-kelly-PPneSBqfCCU-unsplash.jpg"); /* Background image path */
+  background-image: url("../../../../assets/images/kevin-kelly-PPneSBqfCCU-unsplash.jpg"); /* Background image path */
   background-size: cover; /* Cover entire section */
-  background-position: center 10%; /* Center the background image */
-  height: 85vh; /* Full viewport height */
+  background-position: center 9%; /* Center the background image */
+  height: 92vh; /* Full viewport height */
   display: flex; /* Flexbox layout */
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
@@ -46,6 +46,6 @@
 }
 
 .hero-content .hero-text {
-  line-height: 0.5; /* Closer lines */
+  line-height: 0.4; /* Closer lines */
   /* Adjust font size as needed */
 }

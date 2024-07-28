@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Nav from "./pages/constant/Nav/Nav";
-import Hero from "./pages/constant/Hero/Hero";
+import Home from "./pages/Home/Home";
 
 // import "App.css";
 
@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <div className="bg-dark pb-3">
         <Nav />
-        <Hero />
+        <Home />
         <Routes>
           {/* <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<AboutUS />} />

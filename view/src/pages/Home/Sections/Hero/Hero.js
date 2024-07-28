@@ -2,7 +2,7 @@
 import React from "react";
 import "./Hero.css"; // Import the CSS file for styling
 
-import logo_icon from "../../../assets/logo/logo_icon.png";
+import logo_icon from "../../../../assets/logo/logo_icon.png";
 
 const Hero = () => {
   return (
