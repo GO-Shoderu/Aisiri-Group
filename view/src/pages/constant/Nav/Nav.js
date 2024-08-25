@@ -47,46 +47,24 @@ const Nav = () => {
             </li>
             <li className="nav-item mx-4">
               <Link
-                to="/about"
+                to="/shop"
                 className={`nav-link company ${
-                  activeLink === "/about" ? "custom" : ""
+                  activeLink === "/shop" ? "custom" : ""
                 }`}
-                onClick={() => handleNavLinkClick("/about")}
+                onClick={() => handleNavLinkClick("/shop")}
               >
                 Shop Wines
               </Link>
             </li>
             <li className="nav-item mx-4">
               <Link
-                to="/service"
+                to="/about"
                 className={`nav-link company ${
-                  activeLink === "/services" ? "custom" : ""
+                  activeLink === "/about" ? "custom" : ""
                 }`}
-                onClick={() => handleNavLinkClick("/services")}
+                onClick={() => handleNavLinkClick("/about")}
               >
                 About Us
-              </Link>
-            </li>
-            <li className="nav-item mx-4">
-              <Link
-                to="/projects"
-                className={`nav-link company ${
-                  activeLink === "/projects" ? "custom" : ""
-                }`}
-                onClick={() => handleNavLinkClick("/projects")}
-              >
-                Contact
-              </Link>
-            </li>
-            <li className="nav-item mx-4">
-              <Link
-                to="/teams"
-                className={`nav-link company ${
-                  activeLink === "/teams" ? "custom" : ""
-                }`}
-                onClick={() => handleNavLinkClick("/teams")}
-              >
-                Profile
               </Link>
             </li>
             <li className="nav-item mx-4">
@@ -96,6 +74,28 @@ const Nav = () => {
                   activeLink === "/contact" ? "custom" : ""
                 }`}
                 onClick={() => handleNavLinkClick("/contact")}
+              >
+                Contact
+              </Link>
+            </li>
+            <li className="nav-item mx-4">
+              <Link
+                to="/profile"
+                className={`nav-link company ${
+                  activeLink === "/profile" ? "custom" : ""
+                }`}
+                onClick={() => handleNavLinkClick("/profile")}
+              >
+                Profile
+              </Link>
+            </li>
+            <li className="nav-item mx-4">
+              <Link
+                to="/cart"
+                className={`nav-link company ${
+                  activeLink === "/cart" ? "custom" : ""
+                }`}
+                onClick={() => handleNavLinkClick("/cart")}
               >
                 Cart
               </Link>
