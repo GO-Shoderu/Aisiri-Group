@@ -7,8 +7,8 @@ const About = () => {
   return (
     <div className="container-fluid py-3 mt-5 about">
       <div className="container">
-        <h2 className="text-primary text-center wines pt-5">ABOUT US</h2>
-        <div className="row align-items-center mt-5">
+        <h1 className="text-center wines pt-5">ABOUT US</h1>
+        <div className="row align-items-center mt-5 mb-5">
           <div
             className="col"
             data-aos="fade-left"

@@ -6,7 +6,7 @@ import wineImage from "../../../../assets/images/pngegg (1).png";
 const Wines = () => {
   return (
     <div className="container py-3 mt-5">
-      <h2 className="text-primary text-center wines">OUR WINES</h2>
+      <h1 className="text-center wines">OUR WINES</h1>
       <div className="row align-items-center mt-5">
         {" "}
         {/* Add align-items-center here */}
@@ -26,9 +26,7 @@ const Wines = () => {
         >
           <div className="card bg-light">
             <div className="card-body text-center text-xl-start">
-              <h5 className="card-title text-primary wines">
-                Grape Adventures Ahead!
-              </h5>
+              <h5 className="card-title wines">Grape Adventures Ahead!</h5>
               <br />
               <p className="card-text">
                 Explore the world of wine with Aisiri Group. Each bottle holds a
