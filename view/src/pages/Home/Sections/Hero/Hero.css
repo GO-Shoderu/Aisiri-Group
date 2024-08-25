@@ -23,6 +23,7 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7); /* Black color with 50% opacity */
   z-index: 3; /* Ensure it is above the background but below the content */
+  height: 102.5vh; /* Full viewport height */
 }
 
 .hero-content {
@@ -46,6 +47,10 @@
 }
 
 .hero-content .hero-text {
-  line-height: 0.4; /* Closer lines */
+  line-height: 1; /* Closer lines */
   /* Adjust font size as needed */
 }
+
+/* .hero-text .hero-second-text {
+  line-height: 0.4;
+} */
