@@ -36,23 +36,23 @@ const Nav = () => {
           <ul className="navbar-nav ms-auto nav-pills nav-fill">
             <li className="nav-item mx-3">
               <Link
-                to="/#hero"
+                to="#hero"
                 className={`nav-link company ${
-                  activeLink === "/" ? "custom" : ""
+                  activeLink === "#hero" ? "custom" : ""
                 }`}
-                onClick={() => handleNavLinkClick("/")}
+                onClick={() => handleNavLinkClick("#hero")}
               >
                 Home
               </Link>
             </li>
             <li className="nav-item mx-4">
               <Link
-                to="/#shop"
+                to="#shop"
                 smooth
                 className={`nav-link company ${
-                  activeLink === "/shop" ? "custom" : ""
+                  activeLink === "#shop" ? "custom" : ""
                 }`}
-                onClick={() => handleNavLinkClick("/shop")}
+                onClick={() => handleNavLinkClick("#shop")}
               >
                 Shop Wines
               </Link>
@@ -62,9 +62,9 @@ const Nav = () => {
                 to="#about"
                 smooth
                 className={`nav-link company ${
-                  activeLink === "/about" ? "custom" : ""
+                  activeLink === "#about" ? "custom" : ""
                 }`}
-                onClick={() => handleNavLinkClick("/about")}
+                onClick={() => handleNavLinkClick("#about")}
               >
                 About Us
               </Link>
@@ -74,9 +74,9 @@ const Nav = () => {
                 to="#contact"
                 smooth
                 className={`nav-link company ${
-                  activeLink === "/contact" ? "custom" : ""
+                  activeLink === "#contact" ? "custom" : ""
                 }`}
-                onClick={() => handleNavLinkClick("/contact")}
+                onClick={() => handleNavLinkClick("#contact")}
               >
                 Contact
               </Link>
@@ -89,7 +89,7 @@ const Nav = () => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  className={` mt-3 ${
+                  className={` mt-2 pt-1 ${
                     activeLink === "/profile"
                       ? "profile-clicked"
                       : "profile-nClicked"
@@ -107,7 +107,7 @@ const Nav = () => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 448 512"
-                  className={` mt-3 ${
+                  className={` mt-2 pt-1 ${
                     activeLink === "/cart" ? "cart-clicked" : "cart-nClicked"
                   }`}
                   width="17px"

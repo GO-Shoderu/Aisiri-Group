@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import Nav from "./pages/constant/Nav/Nav";
 import Home from "./pages/Home/Home";
@@ -12,7 +12,7 @@ function App() {
       <div className="bg-dark pb-3">
         <Nav />
         <Home />
-        <Routes>
+        {/* <Routes> */}
           {/* <Route exact path="/" element={<Home />} /> */}
           {/* <Route path="/about" element={<AboutUS />} />
           <Route path="/service" element={<Services />} />
@@ -22,7 +22,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/ecard" element={<ECard />} /> */}
-        </Routes>
+        {/* </Routes> */}
         {/* <Scroll /> */}
         {/* <Banner /> */}
         {/* <Footer /> */}

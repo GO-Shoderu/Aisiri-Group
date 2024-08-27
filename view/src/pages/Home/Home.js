@@ -3,6 +3,7 @@ import Hero from "./Sections/Hero/Hero";
 import Wines from "./Sections/Wines/Wines";
 import About from "./Sections/About/About";
 import Contact from "./Sections/Contact/Contact";
+import Scroll from "./Sections/Scroll/Scroll";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Wines />
       <About />
       <Contact />
+      <Scroll />
     </div>
   );
 };
