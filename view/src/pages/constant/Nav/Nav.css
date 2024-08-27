@@ -23,3 +23,19 @@
 .navbar .nav-link.custom {
   color: #ffdd57 !important; /* Highlight the active link differently, if desired */
 }
+
+.profile-nClicked {
+  fill: white;
+}
+
+.profile-clicked {
+  fill: #ffdd57;
+}
+
+.cart-nClicked {
+  fill: white;
+}
+
+.cart-clicked {
+  fill: #ffdd57;
+}
