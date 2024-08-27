@@ -1,6 +1,6 @@
 import "./Nav.css";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import logo from "../../../assets/logo/logo_icon.png";
 
 const Nav = () => {
@@ -36,7 +36,7 @@ const Nav = () => {
           <ul className="navbar-nav ms-auto nav-pills nav-fill">
             <li className="nav-item mx-3">
               <Link
-                to="/"
+                to="/#hero"
                 className={`nav-link company ${
                   activeLink === "/" ? "custom" : ""
                 }`}
@@ -48,6 +48,7 @@ const Nav = () => {
             <li className="nav-item mx-4">
               <Link
                 to="/#shop"
+                smooth
                 className={`nav-link company ${
                   activeLink === "/shop" ? "custom" : ""
                 }`}
@@ -59,6 +60,7 @@ const Nav = () => {
             <li className="nav-item mx-4">
               <Link
                 to="#about"
+                smooth
                 className={`nav-link company ${
                   activeLink === "/about" ? "custom" : ""
                 }`}
@@ -70,6 +72,7 @@ const Nav = () => {
             <li className="nav-item mx-4">
               <Link
                 to="#contact"
+                smooth
                 className={`nav-link company ${
                   activeLink === "/contact" ? "custom" : ""
                 }`}

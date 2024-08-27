@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes } from "react-router-dom";
 
 import Nav from "./pages/constant/Nav/Nav";
 import Home from "./pages/Home/Home";
@@ -13,8 +13,8 @@ function App() {
         <Nav />
         <Home />
         <Routes>
-          {/* <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<AboutUS />} />
+          {/* <Route exact path="/" element={<Home />} /> */}
+          {/* <Route path="/about" element={<AboutUS />} />
           <Route path="/service" element={<Services />} />
           <Route path="/teams" element={<Teams />} />
           <Route path="/okumbe" element={<Okumbe />} />

@@ -5,7 +5,7 @@ import wineImage from "../../../../assets/images/pngegg (1).png";
 
 const Wines = () => {
   return (
-    <div className="container py-3 mt-5">
+    <div className="container py-3 mt-5" id="shop">
       <h1 className="text-center wines">OUR WINES</h1>
       <div className="row align-items-center mt-5">
         {" "}

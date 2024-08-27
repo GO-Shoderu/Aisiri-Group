@@ -40,7 +40,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="container py-3 mt-4 bg-light justify-content-center">
+    <div
+      className="container py-3 mt-4 bg-light justify-content-center"
+      id="contact"
+    >
       <Toaster position="top-center" reverseOrder={true} />
 
       <div className="row mt-5">

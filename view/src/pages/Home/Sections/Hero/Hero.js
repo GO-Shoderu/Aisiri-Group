@@ -6,7 +6,7 @@ import logo_icon from "../../../../assets/logo/logo_icon.png";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="hero">
       <div className="hero-overlay"></div>
       <div className="hero-content">
         <img
