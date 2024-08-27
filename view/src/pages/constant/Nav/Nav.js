@@ -47,7 +47,7 @@ const Nav = () => {
             </li>
             <li className="nav-item mx-4">
               <Link
-                to="/shop"
+                to="/#shop"
                 className={`nav-link company ${
                   activeLink === "/shop" ? "custom" : ""
                 }`}
@@ -58,7 +58,7 @@ const Nav = () => {
             </li>
             <li className="nav-item mx-4">
               <Link
-                to="/about"
+                to="#about"
                 className={`nav-link company ${
                   activeLink === "/about" ? "custom" : ""
                 }`}
@@ -69,7 +69,7 @@ const Nav = () => {
             </li>
             <li className="nav-item mx-4">
               <Link
-                to="/contact"
+                to="#contact"
                 className={`nav-link company ${
                   activeLink === "/contact" ? "custom" : ""
                 }`}
