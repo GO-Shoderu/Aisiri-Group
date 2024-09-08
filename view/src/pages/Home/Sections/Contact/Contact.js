@@ -6,8 +6,58 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import Modal from "react-bootstrap/Modal";
+import logo from "../../../../assets/logo/logo_icon.png";
+
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          <div>
+            <a href="./" className="navbar-brand d-flex align-items-center">
+              <img src={logo} width={50} height={50} alt="Aisiri Group logo" />
+              <span className="ms-2 company-name">Feature Coming Soon</span>
+            </a>
+          </div>
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <p>
+          We appreciate your patience as we work on enhancing your experience.
+        </p>
+        <p>This feature will be available in our next update, including:</p>
+        <ul>
+          <li>Placing orders</li>
+          <li>Viewing prices</li>
+          <li>Creating accounts</li>
+          <li>Contacting us</li>
+          <li>...and much more!</li>
+        </ul>
+        <p>
+          In the meantime, you can leave us your email in the Contact Us
+          section, and we'll keep you informed.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <div
+          onClick={props.onHide}
+          className="text-center text-xl-start call-to-action company-color"
+        >
+          Close
+        </div>
+      </Modal.Footer>
+    </Modal>
+  );
+}
 
 const Contact = () => {
+  const [modalShow, setModalShow] = React.useState(false);
   useEffect(() => {
     AOS.init();
   }, []);
@@ -39,6 +89,8 @@ const Contact = () => {
       );
   };
 
+  const doNothing = event => event.preventDefault();
+
   return (
     <div
       className="container py-3 mt-4 bg-light justify-content-center"
@@ -61,7 +113,8 @@ const Contact = () => {
           </div>
           <div className="row justify-content-center">
             <div className="col mb-5">
-              <form ref={form} onSubmit={sendEmail}>
+              {/* <form ref={form} onSubmit={sendEmail}> */}
+              <form onSubmit={doNothing}>
                 {/* <label for="email" className="form-label">
                   Email address:
                 </label> */}
@@ -141,14 +194,25 @@ const Contact = () => {
                   data-aos-easing="linear"
                   data-aos-duration="250"
                 >
-                  <button
+                  {/* <button
                     type="submit"
                     className="text-center text-xl-start call-to-action company-color"
+                    onClick={() => setModalShow(true)}
+                  >
+                    Submit
+                  </button> */}
+                  <button
+                    className="text-center text-xl-start call-to-action company-color"
+                    onClick={() => setModalShow(true)}
                   >
                     Submit
                   </button>
                 </div>
               </form>
+              <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
             </div>
           </div>
         </div>

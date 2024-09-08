@@ -34,6 +34,7 @@ function MyVerticallyCenteredModal(props) {
           <li>Placing orders</li>
           <li>Viewing prices</li>
           <li>Creating accounts</li>
+          <li>Contacting us</li>
           <li>...and much more!</li>
         </ul>
         <p>
