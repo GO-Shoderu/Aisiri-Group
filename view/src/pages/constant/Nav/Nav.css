@@ -1,0 +1,41 @@
+.hidden-link {
+  display: none;
+}
+
+.company {
+  color: #fff !important; /* Ensure the color is applied by using !important */
+}
+
+.company-name {
+  color: #ffdd57;
+}
+
+.navbar {
+  color: #fff;
+  background-color: rgb(0, 0, 0, 0.3);
+  z-index: +7;
+}
+
+.navbar .nav-link {
+  color: #fff !important; /* Ensure the color is applied by using !important */
+}
+
+.navbar .nav-link.custom {
+  color: #ffdd57 !important; /* Highlight the active link differently, if desired */
+}
+
+.profile-nClicked {
+  fill: white;
+}
+
+.profile-clicked {
+  fill: #ffdd57;
+}
+
+.cart-nClicked {
+  fill: white;
+}
+
+.cart-clicked {
+  fill: #ffdd57;
+}

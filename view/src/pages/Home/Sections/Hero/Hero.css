@@ -1,0 +1,56 @@
+/* Hero.css */
+
+.hero {
+  background-image: url("../../../../assets/images/kevin-kelly-PPneSBqfCCU-unsplash.jpg"); /* Background image path */
+  background-size: cover; /* Cover entire section */
+  background-position: center 9%; /* Center the background image */
+  height: 92vh; /* Full viewport height */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  color: #fff; /* White text color */
+  text-align: center; /* Center text */
+  /* filter: brightness(0.3); */
+  /* z-index: -1; */
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Black color with 50% opacity */
+  z-index: 3; /* Ensure it is above the background but below the content */
+  height: 102.5vh; /* Full viewport height */
+}
+
+.hero-content {
+  position: relative;
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 20px; /* Space between elements */
+  z-index: 4;
+}
+
+.center-image {
+  max-width: 500px; /* Adjust as necessary */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.hero-text {
+  font-size: 6rem; /* Adjust font size */
+
+  color: #ffdd57;
+}
+
+.hero-content .hero-text {
+  line-height: 1; /* Closer lines */
+  /* Adjust font size as needed */
+}
+
+/* .hero-text .hero-second-text {
+  line-height: 0.4;
+} */
