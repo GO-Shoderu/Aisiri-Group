@@ -20,3 +20,8 @@
 .company-color {
   color: #ffdd57 !important;
 }
+
+.no-underline {
+  text-decoration: none !important;
+}
+
