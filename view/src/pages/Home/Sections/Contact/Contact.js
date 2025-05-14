@@ -33,6 +33,7 @@ const Contact = () => {
           form.current.reset();
         },
         (error) => {
+          toast.error("Failed to send email. Please try again.");
           console.log("FAILED...", error.text);
         }
       );
@@ -151,3 +152,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
+console.log("SERVICE ID:", process.env.REACT_APP_SERVICE_ID);
+console.log("TEMPLATE ID:", process.env.REACT_APP_TEMPLATE_ID);
+console.log("PUBLIC KEY:", process.env.REACT_APP_PUBLIC_KEY);
