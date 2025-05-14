@@ -1,18 +1,17 @@
 /* Hero.css */
 
 .hero {
-  background-image: url("../../../../assets/images/kevin-kelly-PPneSBqfCCU-unsplash.jpg"); /* Background image path */
-  background-size: cover; /* Cover entire section */
-  background-position: center 9%; /* Center the background image */
-  height: 92vh; /* Full viewport height */
-  display: flex; /* Flexbox layout */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  color: #fff; /* White text color */
-  text-align: center; /* Center text */
-  /* filter: brightness(0.3); */
-  /* z-index: -1; */
+  background-image: url("../../../../assets/images/kevin-kelly-PPneSBqfCCU-unsplash.jpg");
+  background-size: cover;
+  background-position: center 9%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
   overflow: hidden;
+  position: relative; /* Required for overlay positioning */
 }
 
 .hero-overlay {
@@ -21,10 +20,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7); /* Black color with 50% opacity */
-  z-index: 3; /* Ensure it is above the background but below the content */
-  height: 102.5vh; /* Full viewport height */
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+  height: 100%; /* This is key */
 }
+
 
 .hero-content {
   position: relative;
